@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <data>
+        <variable
+            name="title"
+            type="com.example.android.exercise_2_my_hobby.Title"/>
+    </data>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/text_title"
+            style="@style/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@={title.my_title}" />
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/under_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_half"
+            android:text="@string/book_one" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/picture_not_guilty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@mipmap/not_guilty" />
+
+                <TextView
+                    android:id="@+id/resume_not_guilty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_half"
+                    android:layout_marginTop="@dimen/margin_wide"
+                    android:text="@string/resume_not_guilty" />
+
+                <TextView
+                    android:id="@+id/under_title_opinion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/under_title_opinion"
+                    android:layout_marginStart="@dimen/margin_half"
+                    android:layout_marginTop="@dimen/margin_wide"
+                    style="@style/under_title"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/my_opinion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_half"
+                    android:layout_marginTop="@dimen/margin_wide"
+                    android:text="@string/my_opinion"
+                    android:visibility="gone"/>
+
+                <Button
+                    android:id="@+id/opinion_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/button" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

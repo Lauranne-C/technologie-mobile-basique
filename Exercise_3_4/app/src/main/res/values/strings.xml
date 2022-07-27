@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Exercise_3</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="start_game">What do you want to do ?</string>
+    <string name="addition">addition</string>
+    <string name="subtraction">subtraction</string>
+    <string name="multiplication">multiplication</string>
+    <string name="division">division</string>
+    <string name="end_game">You have done</string>
+    <string name="restart">restart</string>
+    <string name="change">change category</string>
+    <string name="title">Math game</string>
+    <string name="about_title">About math game</string>
+    <string name="about">In this game you can practicing addition, subtraction, multiplication and division.\n You just choose what you do.</string>
+    <string name="title_rules">Rules</string>
+    <string name="rules">The rules are you must answer the questions correctly. And solve calculations.</string>
+    <string name="share_success_text">I mastered #MathGame with %1$d/%2$d correct questions!</string>
+    <string name="next">next</string>
+</resources>

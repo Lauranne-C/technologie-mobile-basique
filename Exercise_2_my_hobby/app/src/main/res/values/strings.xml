@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Exercise_2_my_hobby</string>
+    <string name="title">My hobby: read books</string>
+    <string name="book_one">Not guilty</string>
+    <string name="resume_not_guilty">How can you prove your innocence when the police find you beside the body of your murdered man, your fingerprints are on the murder weapon and the investigating officer already thinks you are guilty?
+\n\nHow do you stop a serial killer who seems to have no motive and no connection to his victims?
+\n\nLieutenant Julie Dante will have to investigate to unravel the real from the fake, because the truth is not always what you believe.</string>
+    <string name="under_title_opinion">My opinion</string>
+    <string name="my_opinion">it\'s a good book because we\'re not only following an investigation but 2 in parallel as well as one of the trials.</string>
+    <string name="button">My opinion</string>
+    </resources>

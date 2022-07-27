@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/under_title"
+        style="@style/under_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/book_one"
+        android:layout_marginStart="@dimen/margin_half"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_wide"
+        android:paddingBottom="32dp"
+        android:scrollY="14000dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/under_title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_wide"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_wide"
+                android:adjustViewBounds="true"
+                app:srcCompat="@mipmap/not_guilty" />
+
+            <TextView
+                android:id="@+id/resume"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_half"
+                android:text="@string/resume_not_guilty" />
+
+            <TextView
+                android:id="@+id/under_title_opinion"
+                style="@style/under_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/under_title_opinion"
+                android:layout_marginStart="@dimen/margin_half"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/my_opinion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="32dp"
+                android:text="@string/my_opinion"
+                android:layout_marginStart="@dimen/margin_half"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="32dp"
+                android:text="@string/button" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Exercise_2e</string>
+    <string name="restart_button">Start again</string>
+    <string name="message">You guessed all, great work !</string>
+    <string name="tag_1">flowers1</string>
+</resources>

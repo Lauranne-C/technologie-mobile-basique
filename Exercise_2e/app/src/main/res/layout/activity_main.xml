@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/restart_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_wide"
+        android:text="@string/restart_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/message" />
+
+    <ImageView
+        android:id="@+id/picture_11"
+        android:layout_width="@dimen/size"
+        android:layout_height="@dimen/size"
+        android:layout_marginTop="@dimen/margin_half"
+        android:tag="flowers_4"
+        app:layout_constraintBottom_toBottomOf="@+id/picture_12"
+        app:layout_constraintEnd_toStartOf="@+id/picture_12"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/picture_10"
+        app:layout_constraintTop_toBottomOf="@+id/picture_8"
+        app:srcCompat="@drawable/flowers_4" />
+
+    <ImageView
+        android:id="@+id/picture_10"
+        android:layout_width="@dimen/size"
+        android:layout_height="@dimen/size"
+        android:layout_marginTop="@dimen/margin_half"
+        android:tag="flowers_2"
+        app:layout_constraintBottom_toBottomOf="@+id/picture_11"
+        app:layout_constraintEnd_toStartOf="@+id/picture_11"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/picture_7"
+        app:srcCompat="@drawable/flowers_2" />
+
+    <ImageView
+        android:id="@+id/picture_12"
+        android:layout_width="@dimen/size"
+        android:layout_height="@dimen/size"
+        android:layout_marginTop="@dimen/margin_half"
+        android:tag="flowers_6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/picture_11"
+        app:layout_constraintTop_toBottomOf="@+id/picture_9"
+        app:srcCompat="@drawable/flowers_6" />
+
+    <ImageView
+        android:id="@+id/picture_2"
+        android:layout_width="@dimen/size"
+        android:layout_height="@dimen/size"
+        android:layout_marginTop="@dimen/margin_wide"
+        android:adjustViewBounds="false"
+        android:tag="flowers_3"
+        app:layout_constraintEnd_toStartOf="@+id/picture_3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/picture_1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/flowers_3" />
+
+    <ImageView
+        android:id="@+id/picture_1"
+        android:layout_width="@dimen/size"
+        android:layout_height="@dimen/size"
+        android:layout_marginTop="@dimen/margin_wide"
+        android:tag="flowers_1"
+        app:layout_constraintEnd_toStartOf="@+id/picture_2"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/flowers_1" />
+
+    <ImageView
+        android:id="@+id/picture_3"
+        android:layout_width="@dimen/size"
+        android:layout_height="@dimen/size"
+        android:layout_marginTop="@dimen/margin_wide"
+        android:tag="flowers_5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/picture_2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/flowers_5" />
+
+    <ImageView
+        android:id="@+id/picture_5"
+        android:layout_width="@dimen/size"
+        android:layout_height="@dimen/size"
+        android:layout_marginTop="@dimen/margin_half"
+        android:layout_marginBottom="@dimen/margin_half"
+        android:adjustViewBounds="false"
+        android:tag="flowers_3"
+        app:layout_constraintBottom_toTopOf="@+id/picture_8"
+        app:layout_constraintEnd_toStartOf="@+id/picture_6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/picture_4"
+        app:layout_constraintTop_toBottomOf="@+id/picture_2"
+        app:srcCompat="@drawable/flowers_3" />
+
+    <ImageView
+        android:id="@+id/picture_4"
+        android:layout_width="@dimen/size"
+        android:layout_height="@dimen/size"
+        android:layout_marginTop="@dimen/margin_half"
+        android:layout_marginBottom="@dimen/margin_half"
+        android:tag="flowers_1"
+        app:layout_constraintBottom_toTopOf="@+id/picture_7"
+        app:layout_constraintEnd_toStartOf="@+id/picture_5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/picture_1"
+        app:srcCompat="@drawable/flowers_1" />
+
+    <ImageView
+        android:id="@+id/picture_6"
+        android:layout_width="@dimen/size"
+        android:layout_height="@dimen/size"
+        android:layout_marginTop="@dimen/margin_half"
+        android:layout_marginBottom="@dimen/margin_half"
+        android:tag="flowers_5"
+        app:layout_constraintBottom_toTopOf="@+id/picture_9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/picture_5"
+        app:layout_constraintTop_toBottomOf="@+id/picture_3"
+        app:srcCompat="@drawable/flowers_5" />
+
+    <ImageView
+        android:id="@+id/picture_7"
+        android:layout_width="@dimen/size"
+        android:layout_height="@dimen/size"
+        android:layout_marginTop="@dimen/margin_half"
+        android:tag="flowers_2"
+        app:layout_constraintEnd_toStartOf="@+id/picture_8"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/picture_4"
+        app:srcCompat="@drawable/flowers_2" />
+
+    <ImageView
+        android:id="@+id/picture_8"
+        android:layout_width="@dimen/size"
+        android:layout_height="@dimen/size"
+        android:layout_marginTop="@dimen/margin_half"
+        android:tag="flowers_4"
+        app:layout_constraintEnd_toStartOf="@+id/picture_9"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/picture_7"
+        app:layout_constraintTop_toBottomOf="@+id/picture_5"
+        app:srcCompat="@drawable/flowers_4" />
+
+    <ImageView
+        android:id="@+id/picture_9"
+        android:layout_width="@dimen/size"
+        android:layout_height="@dimen/size"
+        android:layout_marginTop="@dimen/margin_half"
+        android:tag="flowers_6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/picture_8"
+        app:layout_constraintTop_toBottomOf="@+id/picture_6"
+        app:srcCompat="@drawable/flowers_6" />
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_wide"
+        android:text="@string/message"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/picture_10" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
